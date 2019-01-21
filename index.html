@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="external.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+    <title>Loan Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="title">
+                <h1>Loan Calculator</h1>
+            </div>
+            <div class="error">
+                    <h3>Please double check your numbers</h3>
+                </div>
+            <form action="somewhere.php" target="_blank">
+                <div class="numbers">
+                    <div class="box1 box2"><span class="span-numbers">$</span> <input class="nlb" id="amount" type="number" placeholder="Amount"></div>
+                    <div class="box1 box3"><span class="span-numbers">%</span> <input class="nlb" id="interest-rate" type="number" placeholder="Interest rate"></div>
+                    <div class="box1 box4"><input id="loan-duration" type="number" placeholder="Loan duration (months)"></div>
+                    <div class="box1"><input id="submit-btn" type="submit" value ="Calculate"></div>
+                </div>
+            </form>
+
+            <div class="loader">
+                <img id="loader" src="./img/loading.gif" alt="loading">
+            </div>
+
+           <div class="results">
+               <div class="results-title">
+                    <h3>Results</h3>
+               </div>
+               <div class="box5"><span class="span-results">Monthly payment</span> <input class="box5-input" 
+                id="monthly-payment" type="number" placeholder="$"></div>
+               <div class="box5"><span class="span-results">Total payment</span> <input class="box5-input" 
+                id="total" type="number" placeholder="$"></div>
+               <div class="box5"><span class="span-results">Interest paid</span> <input class="box5-input" 
+                id="interest-paid" type="number" placeholder="$"></div>
+           </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: #f4f4f4;
+}
+
+span{
+    font-family: 'EB Garamond', serif;
+    display: inline-block;
+}
+
+input{
+    display: inline-block;
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input:focus{
+    outline: none;
+}
+
+.container{
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.box{
+    display: block;
+    margin: auto;
+    padding: 1rem;
+    width: 50%;
+    border-radius: 5px;
+    background: #ccc;
+    -webkit-box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.error{
+    display: none;
+    margin-bottom: 1.7rem;
+    width: 100%;
+    background: #ff0033;
+    color: #fff;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: serif, arial;
+    border-radius: 12px;
+    padding: 0.4rem;
+    -webkit-box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.title{
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.numbers{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+
+.box1{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+.box2{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.box2:hover{
+    transition: all ease 300ms;
+    top: 4px;
+    left: 4px;
+}
+
+.box3{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.box3:hover{
+    transition: all ease 300ms;
+    top: 4px;
+    left: 4px;
+}
+
+.box4{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.box4:hover{
+    transition: all ease 300ms;
+    top: 4px;
+    left: 4px;
+}
+
+.span-numbers{
+    width: 39.5px;
+    height: 39.5px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    background: #41b3a3;
+    color: #fff;
+    border-right: 1px solid #99738e; 
+}
+
+.nlb{
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.numbers input{
+    position: relative;
+}
+
+.numbers input:focus{
+    transition: all 300ms;
+    -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+}
+
+#submit-btn{
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+#submit-btn:hover{
+    transition: all ease 400ms;
+    background: #343A40;
+    color: #fff;
+}
+
+.loader{
+    display: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.results{
+    display: none;
+}
+
+.results-title{
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.box5{
+    margin-bottom: 1rem;
+}
+
+.span-results{
+    font-size: 1.1rem;
+}
+
+/* Media queries */
+@media (max-width: 812px){
+    .box{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* iphone plus pixel/2 */
+@media (max-width: 415px){
+    .box{
+        width: 80%;
+    }
+    .title{
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+
+    #loader{
+     width: 150px;
+     height: 150px;   
+    }
+
+    .results-title{
+        font-size: 1.15rem;
+        margin-bottom: 1rem;
+    }
+
+    .error{
+        font-size: 1rem;
+    }
+}
+
+/* iphone x, iphone 6/7/8 */
+@media (max-width: 375px){
+    input{
+        font-size: 0.86em;
+    }
+}
+
+/* Galaxies */
+@media (max-width: 360px){
+    input{
+        font-size: 0.8em;
+    }
+}
+
+/* iphone 4/5 */
+@media (max-width: 320px){
+    .title{
+        font-size: 1.1rem;
+    }
+
+    #loader{
+        width: 100px;
+        height: 100px;
+    }
+
+    input{
+        font-size: 0.7rem;
+    }
+}
